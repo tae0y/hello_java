@@ -7,7 +7,7 @@ public class BOJ2482 {
     static int n, k;
 
     public static void func(int i, int state, int depth){
-        if(i >= n ) return;
+        if(i >= n) return;
         if(depth >= k){
             cnt++;
             return;
@@ -29,10 +29,11 @@ public class BOJ2482 {
         n = sc.nextInt();
         k = sc.nextInt();
 
-/*        //재귀로 모든 경우 세기, 중복제거가 안됨
+        //재귀로 모든 경우 세기, 중복제거가 안됨
         func(0, 1, 1);
         func(0, 0, 0);
         System.out.println("#1 "+cnt);
+
 
         //한칸씩 띄워서 모든 경우의 수 세기, k만족조건 검사가 안됨
         //dp[i] = dp[i-2, 1] + dp[i-1, 0]
@@ -47,7 +48,7 @@ public class BOJ2482 {
             dp[i][1] = dp[i-2][1] + dp[i-1][0];
             dp[i][0] = dp[i-1][1] + dp[i-1][0];
         }
-        System.out.println("#2 "+(dp[n-1][0]+dp[n-1][1]));*/
+        System.out.println("#2 "+(dp[n-1][0]+dp[n-1][1]));
 
 
         //참고 : https://akim9905.tistory.com/71
