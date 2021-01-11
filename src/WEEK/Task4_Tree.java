@@ -26,7 +26,7 @@ public class Task4_Tree {
     private MyStack getSign(int idxMax, int i) {
         MyStack m = new MyStack(idxMax);
         if(i==0) return m;
-        /* TODO : 배열인덱스 중 i개를 골라서 반환 */
+        /* 배열인덱스 중 i개를 골라서 반환 */
         return m;
     }
 
