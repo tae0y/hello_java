@@ -1,5 +1,7 @@
 import BOJ.*;
+import Kakao.AutoComplete;
 import Kakao.ChuseokTraffic;
+import Kakao.MusicRightNow;
 import Kakao.SecretMap;
 import PRO.PRO42897;
 
@@ -14,7 +16,7 @@ public class Main {
         //BOJ1149.main(new String[]{});
         //BOJ11726.main(new String[]{});
 
-        new ChuseokTraffic()._test();
+        //new ChuseokTraffic()._test();
         /*
         new SecretMap()._test();
         //#1
@@ -31,6 +33,8 @@ public class Main {
         System.out.println(Integer.toBinaryString(31|14));
         System.out.println(Integer.toBinaryString(50|10));*/
 
+        //new MusicRightNow()._test();
+        new AutoComplete()._test();
     }
 
 }
