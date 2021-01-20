@@ -34,7 +34,9 @@ public class Main {
         System.out.println(Integer.toBinaryString(50|10));*/
 
         //new MusicRightNow()._test();
-        new AutoComplete()._test();
+        //new AutoComplete()._test();
+        BOJ14502._test();
+        BOJ1916._test();
     }
 
 }
