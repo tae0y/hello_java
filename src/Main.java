@@ -1,9 +1,8 @@
 import BOJ.*;
-import Kakao.AutoComplete;
-import Kakao.ChuseokTraffic;
-import Kakao.MusicRightNow;
-import Kakao.SecretMap;
+import Kakao.*;
 import PRO.PRO42897;
+
+import java.util.ArrayList;
 
 public class Main {
 
@@ -36,7 +35,23 @@ public class Main {
         //new MusicRightNow()._test();
         //new AutoComplete()._test();
         //BOJ14502._test();
-        BOJ1916._test();
+        //BOJ1916._test();
+        //new OpenChat()._test();
+
+        /*int[] a = new int[]{1,2,3};
+        foo(a);
+        System.out.println(a[0]);*/
+        /*int[][] t = new int[10000][10000];
+        int[][] t1 = new int[10000][10000];
+        int[][] t2 = new int[10000][10000];
+        int[][] t3 = new int[10000][10000];
+        int[][] t4 = new int[10000][10000];*/
+        // Exception in thread "main" java.lang.OutOfMemoryError: Java heap space at Main.main(Main.java:45)
+        new FindPath()._test();
+    }
+
+    private static void foo(int[] t) {
+        t[0] = 100;
     }
 
 }
