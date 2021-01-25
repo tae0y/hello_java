@@ -47,7 +47,17 @@ public class Main {
         int[][] t3 = new int[10000][10000];
         int[][] t4 = new int[10000][10000];*/
         // Exception in thread "main" java.lang.OutOfMemoryError: Java heap space at Main.main(Main.java:45)
-        new FindPath()._test();
+        //new FindPath()._test();
+        /*long startTime = System.nanoTime();
+        //System.gc();
+        long endTime = System.nanoTime();
+        System.out.println(endTime - startTime + "ns");*/
+
+        try {
+            MetaspaceTest.main(new String[]{});
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private static void foo(int[] t) {
